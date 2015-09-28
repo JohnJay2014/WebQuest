@@ -5,16 +5,19 @@
 <title></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
+<link href="assets/stylesheet/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/stylesheet/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="assets/javascript/jquery.min.js"></script>
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
 <body>
+
+
 <div id="page" class="container">
 	<div id="header">
 		<div id="menu">
+		   
 			<ul>
 				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
 				<li><a href="#introduction" accesskey="2" title="">Introduction</a></li>
@@ -23,7 +26,9 @@
 				<li><a href="#evaluation" accesskey="5" title="">Evaluation</a></li>
 				<li><a href="#conclusion" accesskey="5" title="">Conclusion</a></li>
 			</ul>
+
 		</div>
+		
 	</div>
 	<div id="main">
 		<div id="banner">
@@ -72,6 +77,21 @@
 		</div>
 	</div>
 </div>
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
+
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+	$("#menu ul li").click(function () {
+		$("#menu ul li").each(function () {
+			$(this).removeClass('current_page_item');
+		});
+		$(this).addClass('current_page_item');
+	});
+});
+</script>
+
+
+
+
