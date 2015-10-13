@@ -148,7 +148,7 @@
 	{
 		padding: 1em 0em 5px 0em;
 		text-transform: uppercase;
-		font-size: 1em;
+		font-size: 1.5em;
 		font-weight: 400;
 	}
 	
@@ -362,12 +362,22 @@
 		margin-bottom: 3em;
 	}
 	
+	.title h1
+	{
+		font-size: 2.4em;
+
+	}
 	.title h2
 	{
-		text-transform: lowercase;
-		font-size: 2.8em;
+		font-size: 2.0em;
+		margin-bottom: 0.5em;
+		margin-top: 1.0em;
 	}
-
+    
+    .title h3
+	{	
+		margin-bottom: 0.5em;
+	}
 	.title p
 	{
 		margin-top: 1em;
@@ -377,6 +387,7 @@
 	{
 		font-size: 1.3em;
 		color: #6F6F6F;
+		margin-bottom: 1.0em;
 	}
 		
 /*********************************************************************************/
@@ -579,3 +590,45 @@
 		height:200px;
 		border-width:0;
 	}
+
+
+
+
+#evaluation .table-content {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#evaluation table {
+    border-spacing: 0;
+    margin: 1.5rem auto;
+    min-width: 500px;
+    width: 100%;
+    border: none;
+}
+
+
+#evaluation table tr:first-child td, #evaluation table tr td:first-child {
+    background: #ddd;
+    font-weight: 900;
+    text-align: center;
+    min-width: 120px;
+}
+
+#evaluation table tr td {
+    padding: 1rem 0.7rem;
+    border: 1px solid #555;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+#evaluation ol {
+    margin: 0rem;
+    padding-left: 0.5rem;
+}
+
+#evaluation ol li {
+    padding-left: 0.1rem;
+    margin-top: 0;
+}
